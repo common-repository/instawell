@@ -1,0 +1,285 @@
+/* Tabs container */
+.iw-logo {
+	background-image: url('../img/logo-heart-mark.png');
+	width: 40px; 
+	height: 40px;
+	vertical-align: middle; 
+	margin-right: 5px;
+	display: inline-block;
+    background-size: 40px;
+}
+
+.r-tabs {
+	position: relative;
+
+	background-color: #23282d;
+
+	border-top: 1px solid #23282d;
+	border-right: 1px solid #23282d;
+	border-left: 1px solid #23282d;
+	border-bottom: 4px solid #23282d;
+	border-radius: 4px;
+}
+
+/* Tab element */
+.r-tabs .r-tabs-nav .r-tabs-tab {
+	position: relative;
+	background-color: #23282d;
+}
+
+/* Tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-anchor {
+	display: inline-block;
+	padding: 10px 12px;
+
+	text-decoration: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+/* Disabled tab */
+.r-tabs .r-tabs-nav .r-tabs-state-disabled {
+	opacity: 0.5;
+}
+
+/* Active state tab anchor */
+.r-tabs .r-tabs-nav .r-tabs-state-active .r-tabs-anchor {
+	color: #23282d;
+	text-shadow: none;
+
+	background-color: white;
+
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+/* Tab panel */
+.r-tabs .r-tabs-panel {
+	background-color: white;
+
+	border-bottom: 4px solid white;
+
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+
+}
+
+/* Accordion anchor */
+.r-tabs .r-tabs-accordion-title .r-tabs-anchor {
+	display: block;
+	padding: 10px;
+
+	background-color: #23282d;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+	font-size: 14px;
+
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+}
+
+/* Active accordion anchor */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-active .r-tabs-anchor {
+	background-color: #fff;
+	color: #23282d;
+	text-shadow: none;
+}
+
+/* Disabled accordion button */
+.r-tabs .r-tabs-accordion-title.r-tabs-state-disabled {
+	opacity: 0.5;
+}
+
+/* Buttons */
+button {
+	display:inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 10px 20px;
+	line-height: 100%;
+
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+	vertical-align: middle;
+	font-weight: bold;
+	
+	border: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #23282d;
+	box-shadow: 0px 3px 0px 0px #00ab94;
+	
+	cursor: pointer;
+}
+
+/* Info bar */
+.info {
+	display:inline-block;
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 10px 20px;
+	width: 300px;
+	line-height: 100%;
+
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-size: 14px;
+	color: #23282d;
+	border: 2px solid #00ab94;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color: #fff;
+
+	cursor: pointer;
+} 
+
+.r-tabs .r-tabs-nav {
+    margin: 0;
+    padding: 0;
+}
+
+.r-tabs .r-tabs-tab {
+    display: inline-block;
+    margin: 0;
+    list-style: none;
+}
+
+.r-tabs .r-tabs-panel {
+    padding: 15px;
+    display: none;
+}
+
+.r-tabs .r-tabs-accordion-title {
+    display: none;
+}
+
+.r-tabs .r-tabs-panel.r-tabs-state-active {
+    display: block;
+}
+
+/* Accordion responsive breakpoint */
+@media only screen and (max-width: 768px) {
+    .r-tabs .r-tabs-nav {
+        display: none;
+    }
+
+    .r-tabs .r-tabs-accordion-title {
+        display: block;
+    }
+}
+
+/* Buttons */
+.button-secondary.button-danger {
+	background: #d54e21;
+	color: #fff;
+}
+
+.button-secondary.button-danger:hover,
+.button-secondary.button-danger:focus, 
+.button-secondary.button-danger:active {
+	background: rgb(169, 72, 40);
+	color: #fff;
+}
+
+/* Plan card */
+.plan-card-wrap {
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-right: 15px;
+}
+
+.plan-card-wrap .plan-card {
+	margin-right: 0;
+}
+
+.plan-card-add-plan .action-button,
+.plan-card-remove-plan .action-button {
+	float: right;
+}
+
+.plans-list {
+	font-size: 0;
+}
+.plan-card {
+	display: inline-block;
+	font-size: 18px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.plan-card-bg {
+	background-size: cover;
+	background-position: 50% 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.plan-card-bg-overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.plan-card-body {
+	position: absolute;
+    z-index: 3;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+}
+
+.plan-card-body h3 {
+    color: #fff;
+    line-height: 1.1111;
+    font-weight: 400;
+    margin: 0;
+	margin-bottom: 15px;
+}
+
+.plan-card-body h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.plan-options-list-cont {
+	font-size: 16px;
+	float: left;
+	min-height: 95px;
+}
+
+.plan-options-list-cont h5 {
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+.plan-options-list {
+	font-size: 16px;
+	margin: 0;
+}

@@ -1,0 +1,112 @@
+/* Set the app attribute to your app's dash-delimited alias. */
+ 
+
+[cf-app="instawell"].instawell-widget-cont {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100000000;
+    text-align: right;
+	display: block!important;
+	font-size: 0;
+}
+
+[cf-app="instawell"].instawell-widget-cont .instawell-widget-inner-cont {
+	margin-top: 0;
+    background: #fff;
+    font-size: 19px;
+    border-radius: 10px;
+    font-weight: 600;
+    line-height: 1;
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid #ddd;
+	font-family: sans-serif;
+	position: relative;
+	width: 60px;
+	height: 60px;
+}
+
+[cf-app="instawell"].instawell-widget-cont .instawell-widget-image {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+[cf-app="instawell"].instawell-widget-cont .instawell-widget-close {
+	display: none;
+    width: 24px;
+    position: absolute;
+    left: 50%;
+    margin-left: -12px;
+    top: 50%;
+    margin-top: -12px;
+    font-weight: 100;
+    height: 24px;
+    opacity: 0.7;
+}
+
+[cf-app="instawell"].instawell-widget-cont .open-iframe .instawell-widget-close {
+	display: block;
+	
+}
+
+[cf-app="instawell"].instawell-widget-cont .open-iframe.instawell-widget-inner-cont {
+	background: #ef5722;
+}
+
+[cf-app="instawell"].instawell-widget-cont .instawell-widget-inner-cont:hover .instawell-widget-close {
+	opacity: 1;
+}
+
+[cf-app="instawell"].instawell-widget-cont .open-iframe .instawell-widget-image {
+	display: none;
+}
+
+[cf-app="instawell"].instawell-widget-cont .instawell-widget-iframe-outerwrap {
+	border: 1px solid #ddd;
+	background: #fff;
+	margin-bottom: 10px;
+	overflow: hidden;
+    border-radius: 20px;
+}
+
+[cf-app="instawell"].instawell-widget-cont .iw-ios-browser .instawell-widget-iframe-outerwrap {
+	border-radius: 0;
+}
+
+[cf-app="instawell"].instawell-widget-cont .instawell-widget-iframe-wrap {
+	width: 380px;
+	height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width:767px) { 
+	[cf-app="instawell"].instawell-widget-cont .instawell-widget-iframe-wrap {
+		width: 350px;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+	[cf-app="instawell"].instawell-widget-cont .instawell-widget-iframe-wrap {
+		overflow: auto;
+		-webkit-overflow-scrolling:touch;
+	}
+}
+				
+[cf-app="instawell"].instawell-widget-cont .instawell-widget-iframe-wrap iframe {
+    height: 100%;
+    border: none;
+    width: 100%;
+	height: 500px;
+    outline: none;
+}
